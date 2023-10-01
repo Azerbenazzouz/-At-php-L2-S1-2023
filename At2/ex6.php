@@ -15,8 +15,14 @@
 </body>
 </html>
 <?php
+    if(!isset($_POST["num1"]) || !isset($_POST["num2"])){
+        exit();
+    }
     $num1 = $_POST["num1"];
     $num2 = $_POST["num2"];
+    echo "<script>let f1 = document.forms[0];
+            f1.num1.value = $num1; f1.num2.value = $num2;
+        </script>";
     $result = $num1 + $num2;
     echo "<h1>$num1 + $num2 = $result</h1>";
 ?>
