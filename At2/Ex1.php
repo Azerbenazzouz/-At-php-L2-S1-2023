@@ -49,23 +49,6 @@
             }
             echo "</table>";
 
-            function sortTab($Tab , $state) : array {
-                $tabRes = array();
-                $tabSort = $Tab;
-                if($state == "asc")
-                    asort($tabSort);
-                else if($state == "desc")
-                    arsort($tabSort);
-
-                foreach ($Tab as $key => $value) {
-                    foreach ($tabSort as $key2 => $value2) {
-                        if($key == $key2)
-                            $tabRes[$key] = $value2;
-                    }
-                }
-                return $tabRes;
-            }
-
             // trier le tableau par ordre croissant notes
             echo "<h3 class='text-body-secondary'>Trier le tableau par ordre croissant notes :</h3><br>";
             echo "<table class='table table-hover'>
@@ -100,7 +83,7 @@
 
             // calcul moyenne
             echo "<h3 class='text-body-secondary'>La moyenne des notes : <span class='text-primary'>".array_sum($Notes)/count($Notes)."</span></h3><br>";
-            
+
         ?>
     </div>
 </body>

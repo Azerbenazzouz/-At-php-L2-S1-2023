@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type='text/css' rel='stylesheet' href='./bootstrap.css'>
-    <title>Document</title>
+    <title>Home</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-light" data-bs-theme="light">
@@ -17,6 +17,9 @@
         <ul class="navbar-nav me-auto">
             <li class="nav-item">
                 <a class="nav-link" href="/?page=Ex1">Ex1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/?page=Ex2">Ex2</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Pricing</a>
@@ -36,8 +39,12 @@
         // auto width detect
         $width = "100%";
         $height = "900vh";
-        if(isset($_GET['page']))
+        if(isset($_GET['page'])){
             echo "<iframe src='./".$_GET['page'].".php' width='$width' height='$height'></iframe>";
+            echo "<script>
+                    document.head.getElementsByTagName('title')[0].innerHTML = '".$_GET['page']."';
+                </script>";
+        }
         else
             echo "home";
         
