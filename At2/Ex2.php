@@ -57,6 +57,56 @@
                     </tr>";
             }
             echo "</table>";
+
+            $tabpays2 = array("marina" => "dubai", "rome" => "italie", "berlin" => "allemagne", "madrid" => "espagne","berne" => "suisse" , "tunis" => "tunisie" , "monaco" => "france");
+
+            // afficher le tableau
+
+            echo "<h1 >Tableau des pays :</h1><br>";
+            echo "<table class='table table-hover'>
+                <tr>
+                    <th>Capitale</th>
+                    <th>Pays</th>
+                </tr>";
+            foreach ($tabpays2 as $key => $value) {
+                echo "<tr class='table-active'>
+                        <td>$key</td>
+                        <td>$value</td>
+                    </tr>";
+            }
+            echo "</table>";
+
+            // trie du tableau croissant ordre alphabetique
+            echo "<h1 >Tableau des pays trié par ordre alphabetique :</h1><br>";
+            ksort($tabpays2);
+            echo "<table class='table table-hover'>
+                <tr>
+                    <th>Capitale</th>
+                    <th>Pays</th>
+                </tr>";
+            foreach ($tabpays2 as $key => $value) {
+                echo "<tr class='table-active'>
+                        <td>$key</td>
+                        <td>$value</td>
+                    </tr>";
+            }
+            echo "</table>";
+
+            // trie du tableau decroissant ordre valeur
+            echo "<h1 >Tableau des pays trié par ordre valeur :</h1><br>";
+            asort($tabpays2);
+            echo "<table class='table table-hover'>
+                <tr>
+                    <th>Capitale</th>
+                    <th>Pays</th>
+                </tr>";
+            foreach ($tabpays2 as $key => $value) {
+                echo "<tr class='table-active'>
+                        <td>$key</td>
+                        <td>$value</td>
+                    </tr>";
+            }
+            echo "</table>";
         ?>
     </div>
 </body>

@@ -22,6 +22,12 @@
                 <a class="nav-link" href="/?page=Ex2">Ex2</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="/?page=Ex3">Ex3</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/?page=Ex4">Ex4</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="#">Pricing</a>
             </li>
             <li class="nav-item">
