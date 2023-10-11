@@ -29,14 +29,21 @@
         <?php
             if(isset($_POST['f1'])){
                 echo "<script>
-                    document.f.txt.value = '$_POST[txt]'
+                        document.f.txt.value = '$_POST[txt]'
                     </script>";
                 $ch = $_POST['txt'];
                 $len = strlen($ch);
                 echo "<h1 class='mt-5'>la longueur de la chaine est : <span class='text-danger' id='motp'>$len</span></h1>";
-                if(isset($_POST['num_depart'])){
-                    $num_depart = $_POST['num_depart'];
-                    echo "<h1 class='mt-5'>la sous chaine est : <span class='text-danger' id='motp'>".substr($ch, $num_depart)."</span></h1>";
+                if ($len > 0) {
+                    if(isset($_POST['num_depart'])){
+                        $num_depart = $_POST['num_depart'];
+                        echo "<h1 class='mt-5'>la sous chaine est : <span class='text-danger' id='motp'>".substr($ch, $num_depart)."</span></h1>";
+                    }
+                    $ch2 = "";
+                    for ($i=$len-1; $i >= 0; $i--) { 
+                        $ch2 .= $ch[$i];
+                    }
+                    echo "<h1 class='mt-5'>la chaine inversée est : <span class='text-danger' id='motp'>$ch2</span></h1>";
                 }
             }
         ?>

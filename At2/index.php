@@ -28,10 +28,7 @@
                 <a class="nav-link" href="/?page=Ex4">Ex4</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="/?page=Ex5">Ex5</a>
             </li>
         </ul>
         <form class="d-flex">
