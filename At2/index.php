@@ -30,10 +30,13 @@
             <li class="nav-item">
                 <a class="nav-link" href="/?page=Ex5">Ex5</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/?page=Ex6">Ex6</a>
+            </li>
         </ul>
-        <form class="d-flex">
-            <input class="form-control me-sm-2" type="search" placeholder="Search">
-            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+        <form name="S" class="d-flex">
+            <input class="form-control me-sm-2" name="page" type="search" placeholder="Search">
+            <button class="btn btn-secondary my-2 my-sm-0" name="SS" type="submit">Search</button>
         </form>
         </div>
     </div>
@@ -51,6 +54,25 @@
         else
             echo "home";
         
+    ?>
+    <?php
+        if(isset($_GET['SS'])){
+            $txt = $_GET['page'];
+            $tab = ['Ex1' => 'Ex1.php',
+                    'Ex2' => 'Ex2.php',
+                    'Ex3' => 'Ex3.php',
+                    'Ex4' => 'Ex4.php',
+                    'Ex5' => 'Ex5.php',
+                    'Ex6' => 'Ex6.php'];
+            foreach ($tab as $key => $value) {
+                if($key == $txt){
+                    echo "<script>
+                            document.head.getElementsByTagName('title')[0].innerHTML = '$key';
+                            document.getElementsByTagName('iframe')[0].src = './$value';
+                        </script>";
+                }
+            }
+        }
     ?>
 </body>
 </html>
