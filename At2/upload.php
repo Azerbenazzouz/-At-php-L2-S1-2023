@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link type='text/css' rel='stylesheet' href='../bootstrap.css'>
 </head>
 <body>
-    <form action="cible.php" method="post">
-        <input type="text" name="Name" id="">
-        <input type="text" name="Email" id="">
-        <input type="submit" name="submit" value="submit">
+    <form action="" method="post">
+        <input type="file" name="" id="">
     </form>
 </body>
 </html>
