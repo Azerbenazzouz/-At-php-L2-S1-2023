@@ -16,13 +16,16 @@
         <div class="collapse navbar-collapse" id="navbarColor03">
         <ul class="navbar-nav me-auto">
             <li class="nav-item">
-                <a class="nav-link" href="/?page=Ex1">Ex1</a>
+                <a class="nav-link" href="/?page=Ex1T">Ex1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/?page=Ex1">Cour</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/?page=Ex2">Ex2</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/?page=Ex3">Ex3</a>
+                <a class="nav-link" href="/?page=login">Login</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/?page=Ex4">Ex4</a>
