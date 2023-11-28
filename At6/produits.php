@@ -34,6 +34,18 @@
                     <strong>Erreur de Modiification .</strong>
                 </div>";
                 break;
+            case '2':
+                echo "<div class='alert alert-dismissible alert-success'>
+                    <button type='button' class='btn-close' data-bs-dismiss='alert'></button>
+                    <strong>Ajout réussie .</strong>
+                </div>";
+                break;
+            case '3':
+                echo "<div class='alert alert-dismissible alert-danger'>
+                    <button type='button' class='btn-close' data-bs-dismiss='alert'></button>
+                    <strong>Erreur de Ajout .</strong>
+                </div>";
+                break;
         }
         
     }
@@ -66,7 +78,7 @@
         echo "</tr>";
     }
     echo "</table>";
-    echo "<a href='' class='btn btn-success bt-sm'>Ajouter Produit</a>";
+    echo "<a href='/ajouter_produit.php' class='btn btn-success bt-sm'>Ajouter Produit</a>";
 ?>
 
 <?php

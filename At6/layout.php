@@ -49,7 +49,6 @@
                     if(!isset($_SESSION['compteId'])){
                         echo "<li class='nav-item'><a class='nav-link' href='#'><i class='fas fa-sign-in mx-1'></i>Connexion</a></li>";
                     }else{
-                        echo "<li class='nav-item'><a class='nav-link' href='deconnexion.php'><i class='fas fa-sign-out mx-1'></i>Déconnexion</a></li>";
                     }
                 ?>
             </ul>
