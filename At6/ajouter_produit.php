@@ -31,18 +31,6 @@
             header("location:produits.php?etat=5");
         }
     }
-    // if(!isset($_GET['id'])){
-    //     header("location:produits.php?etat=3");
-    // }else{
-    //     $id = $_GET['id'];
-    //     $sql = "SELECT * FROM produit WHERE id=$id";
-    //     $res = $connection->query($sql);
-        
-    //     $produit = $res->fetch(PDO::FETCH_NUM);
-
-    //     echo "<h1 class='mb-5'> Modifier produit : </h1>";
-        
-    // }
 ?>
 <h1 class='mb-5 text-center'> Ajouter produit : </h1>
 <form action="<?=$_SERVER['PHP_SELF']?>" method="post" name="formProduit">
