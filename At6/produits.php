@@ -51,16 +51,20 @@
     }
 ?>
 <h1> Liste des produits </h1>
-<table class="table table-striped">
-    <tr class="table-primary">
-        <th>Identifaint</th>
-        <th>Libelle</th>
-        <th>Prix</th>
-        <th>Quantite</th>
-        <th>En Promo</th>
-        <th colspan="3">Action</th>
-    </tr>
-    
+<table class="display table" style="width:100%" id="example">
+    <thead>
+        <tr class="table-primary">
+            <th>Identifaint</th>
+            <th>Libelle</th>
+            <th>Prix</th>
+            <th>Quantite</th>
+            <th>En Promo</th>
+            <th>Action</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
 
 <?php
     foreach($LesProduits as $produit){
@@ -77,7 +81,7 @@
         echo "<td><a href='detail_produit.php?id=$produit[0]'>Detail</a></td>";
         echo "</tr>";
     }
-    echo "</table>";
+    echo "</tbody></table>";
     echo "<a href='/ajouter_produit.php' class='btn btn-success bt-sm'>Ajouter Produit</a>";
 ?>
 
